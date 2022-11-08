@@ -1,0 +1,418 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item size="12" padding="around-small">
+            <!-- Container -->
+            <div class="myContainer">
+
+                <div data-id="firstDiv" class="mySlider slds-grid slds-gutters">
+
+                    <!-- first profile Div -->
+                    <div class="mySlides  slds-col slds-size_3-of-4" style="color:black">
+                        <template if:true={firstdiv}>
+                        <lightning-card >
+
+                            <div class="slds-var-p-horizontal_small">
+                                <div class="slds-grid slds-wrap" style="width:250px;">
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <!-- image for first profile -->
+                                        <img src={imageUrl} style="height:136px; width:136px; margin-left: -17px;" />
+
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <p class="slds-var-m-bottom_xx-small"><strong>Profile</strong></p>
+                                        <p class="slds-var-m-bottom_xx-small name"><b>{name}</b>
+                                        </p>
+                                        <p class="slds-var-m-bottom_xx-small abc">{position}</p>
+                                        <p class="slds-var-m-bottom_xx-small aa">{email}</p>
+
+                                        <div>
+                                            <template if:true={firstfacebook}>
+
+                                            <a href={facebook} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644908000/Appraisal__facebook"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        <template if:true={firstLinkedin}>
+
+                                            <a href={linkdin} class="socialLink">
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667645104000/Appraisal__LinkedIn?"
+                                                    style="margin-right:10px" />
+                                            </a>
+                                        </template>
+                                        <template if:true={firstInsta}>
+                                            <a href={instagram} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644985000/Appraisal__Instagram?"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning-card>
+                    </template>
+                    </div>
+                    <!-- Second Profile Div -->
+                    
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                        <template if:true={seconddiv}>
+                        <lightning-card >
+
+                            <div class="slds-var-p-horizontal_small">
+                                <div class="slds-grid slds-wrap" style="width:250px;">
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <!-- image for Second profile -->
+                                        <img src={imageUrl2}
+                                            style="height:136px; width:136px; margin-left: -17px; margin-right:-20px;" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        
+                                            <span><p class="slds-var-m-bottom_xx-small"><strong>Profile</strong></p>
+                                                <p class="slds-var-m-bottom_xx-small name" style="color: blue;"><b>{name1}</b>
+                                                </p>
+                                                <p class="slds-var-m-bottom_xx-small abc">{position1}</p>
+                                                <p class="slds-var-m-bottom_xx-small aa">{email1}</p></span>
+                                        <div>
+                                                <template if:true={secondfacebook}>
+                                            <a href={facebook1} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644908000/Appraisal__facebook"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+
+                                            <template if:true={secondlinkedin}>
+                                            <a href={linkdin1} class="socialLink">
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667645104000/Appraisal__LinkedIn?"
+                                                    style="margin-right:10px" />
+                                            </a>
+                                            </template>
+                                            <template if:true={secondinsta}>
+                                            <a href={instagram1} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644985000/Appraisal__Instagram?"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning-card>
+                    </template>
+                    </div>
+                
+                    <!-- third Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                        <template if:true={thirddiv}>
+                        <lightning-card >
+
+                            <div class="slds-var-p-horizontal_small">
+                                <div class="slds-grid slds-wrap" style="width:250px;">
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <!-- image for third profile -->
+                                        <img src={imageUrl3}
+                                            style="height:136px; width:136px; margin-left: -17px; margin-right:-20px;" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <p class="slds-var-m-bottom_xx-small"><strong>Profile</strong></p>
+                                        <p class="slds-var-m-bottom_xx-small name" style="color: blue;"><b>{name2}</b>
+                                        </p>
+                                        <p class="slds-var-m-bottom_xx-small abc">{position2}</p>
+                                        <p class="slds-var-m-bottom_xx-small aa">{email2}</p>
+                                        <div>
+                                            <template if:true={thirdfacebook}>
+                                            <a href={facebook2} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644908000/Appraisal__facebook"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                            <template if:true={thirdlinkedin}>
+                                            <a href={linkdin2} class="socialLink">
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667645104000/Appraisal__LinkedIn?"
+                                                    style="margin-right:10px" />
+                                            </a>
+                                        </template>
+                                        <template if:true={thirdinsta}>
+                                            <a href={instagram2} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644985000/Appraisal__Instagram?"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning-card>
+                        </template>
+                    </div>
+                    <!-- Four Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                        <template if:true={fourdiv}>
+                        <lightning-card >
+
+                            <div class="slds-var-p-horizontal_small">
+                                <div class="slds-grid slds-wrap" style="width:250px;">
+                                    <div class="slds-col slds-size_6-of-12">
+
+                                        <img src={imageUrl4}
+                                            style="height:136px; width:136px; margin-left: -17px; margin-right:-20px;" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <p class="slds-var-m-bottom_xx-small"><strong>Profile</strong></p>
+                                        <p class="slds-var-m-bottom_xx-small name" style="color: blue;"><b>{name3}</b>
+                                        </p>
+                                        <p class="slds-var-m-bottom_xx-small abc">{position3}</p>
+                                        <p class="slds-var-m-bottom_xx-small aa">{email3}</p>
+                                        <div>
+                                            <template if:true={fourfacebook}>
+                                            <a href={facebook3} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644908000/Appraisal__facebook"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        <template if:true={fourlinkedin}>
+
+                                            <a href={linkdin3} class="socialLink">
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667645104000/Appraisal__LinkedIn?"
+                                                    style="margin-right:10px" />
+                                            </a>
+                                        </template>
+                                        <template if:true={fourinsta}>
+                                            <a href={instagram3} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644985000/Appraisal__Instagram?"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning-card>
+                        </template>
+                    </div>
+                    <!-- fifth Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                        <template if:true={fivediv}>
+                        <lightning-card >
+
+                            <div class="slds-var-p-horizontal_small">
+                                <div class="slds-grid slds-wrap" style="width:250px;">
+                                    <div class="slds-col slds-size_6-of-12">
+
+                                        <img src={imageUrl5}
+                                            style="height:136px; width:136px; margin-left: -17px; margin-right:-20px;" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <p class="slds-var-m-bottom_xx-small"><strong>Profile</strong></p>
+                                        <p class="slds-var-m-bottom_xx-small name " style="color: blue;"><b>{name4}</b>
+                                        </p>
+                                        <p class="slds-var-m-bottom_xx-small abc">{position4}</p>
+                                        <p class="slds-var-m-bottom_xx-small aa">{email4}</p>
+                                        <div>
+                                        <template if:true={fivefacebook}>
+                                            <a href={facebook4} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644908000/Appraisal__facebook"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                            <template if:true={fivelinkedin}>
+                                
+                                            <a href={linkdin4} class="socialLink">
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667645104000/Appraisal__LinkedIn?"
+                                                    style="margin-right:10px" />
+                                            </a>
+                                        </template>
+                                        <template if:true={fiveinsta}>
+                                            <a href={instagram4} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644985000/Appraisal__Instagram?"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning-card>
+                        </template>
+                    </div>
+                    <!-- Six Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                        <template if:true={sixdiv}>
+                        <lightning-card >
+
+                            <div class="slds-var-p-horizontal_small">
+                                <div class="slds-grid slds-wrap" style="width:250px;">
+                                    <div class="slds-col slds-size_6-of-12">
+
+                                        <img src={imageUrl6}
+                                            style="height:136px; width:136px; margin-left: -17px; margin-right:-20px;" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <p class="slds-var-m-bottom_xx-small"><strong>Profile</strong></p>
+                                        <p class="slds-var-m-bottom_xx-small name" ><b>{name5}</b>
+                                        </p>
+                                        <p class="slds-var-m-bottom_xx-small abc">{position5}</p>
+                                        <p class="slds-var-m-bottom_xx-small aa">{email5}</p>
+                                        <div>
+                                            <template if:true={sixfacebook}>
+                                            <a href={facebook5} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644908000/Appraisal__facebook"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        <template if:true={sixlinkedin}>
+                                            <a href={linkdin5} class="socialLink">
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667645104000/Appraisal__LinkedIn?"
+                                                    style="margin-right:10px" />
+                                            </a>
+                                        </template>
+                                        <template if:true={sixinsta}>
+                                            <a href={instagram5} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644985000/Appraisal__Instagram?"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning-card>
+                        </template>
+                    </div>
+                    <!-- Seven Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                        <template if:true={sevendiv}>
+                        <lightning-card >
+
+                            <div class="slds-var-p-horizontal_small">
+                                <div class="slds-grid slds-wrap" style="width:250px;">
+                                    <div class="slds-col slds-size_6-of-12">
+
+                                        <img src={imageUrl7}
+                                            style="height:136px; width:136px; margin-left: -17px; margin-right:-20px;" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <p class="slds-var-m-bottom_xx-small"><strong>Profile</strong></p>
+                                        <p class="slds-var-m-bottom_xx-small name" style="color: blue;"><b>{name6}</b>
+                                        </p>
+                                        <p class="slds-var-m-bottom_xx-small abc">{position6}</p>
+                                        <p class="slds-var-m-bottom_xx-small aa">{email6}</p>
+                                        <div>
+                                            <template if:true={sevenfacebook}>                                   
+                                                   <a href={facebook6} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644908000/Appraisal__facebook"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>      
+                                        <template if:true={sevenlinkedin}>
+                                            <a href={linkdin6} class="socialLink">
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667645104000/Appraisal__LinkedIn?"
+                                                    style="margin-right:10px" />
+                                            </a>
+                                        </template>
+                                        <template if:true={seveninsta}>
+                                            <a href={instagram6} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644985000/Appraisal__Instagram?"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning-card>
+                        </template>
+                    </div>
+                    <!-- Eight Profile Div -->
+                    <div class="mySlides  slds-col slds-size_1-of-4" style="color:black">
+                        <template if:true={eightdiv}>
+                        <lightning-card >
+
+                            <div class="slds-var-p-horizontal_small">
+                                <div class="slds-grid slds-wrap" style="width:250px;">
+                                    <div class="slds-col slds-size_6-of-12">
+
+                                        <img src={imageUrl8}
+                                            style="height:136px; width:136px; margin-left: -17px; margin-right:-20px;" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <p class="slds-var-m-bottom_xx-small"><strong>Profile</strong></p>
+                                        <p class="slds-var-m-bottom_xx-small name" style="color: blue;"><b>{name7}</b>
+                                        </p>
+                                        <p class="slds-var-m-bottom_xx-small abc">{position7}</p>
+                                        <p class="slds-var-m-bottom_xx-small aa">{email7}</p>
+                                        <div>
+                                            <template if:true={eightfacebook}>
+                                            <a href={facebook7} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644908000/Appraisal__facebook"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        <template if:true={eightlinkedin}>
+                                            <a href={linkdin7} class="socialLink">
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667645104000/Appraisal__LinkedIn?"
+                                                    style="margin-right:10px" />
+                                            </a>
+                                        </template>
+                                        <template if:true={eightinsta}>
+                                            <a href={instagram7} class="socialLink">
+
+                                                <img src="https://zehntech-dev-ed--appraisal.vf.force.com/resource/1667644985000/Appraisal__Instagram?"
+                                                    style="margin-right:10px" />
+
+                                            </a>
+                                        </template>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning-card>
+                        </template>
+                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick={previous}>&#10094;</a>
+                <a class="next" onclick={next}>&#10095;</a>
+            </div>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
